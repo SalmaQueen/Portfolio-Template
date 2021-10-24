@@ -1,0 +1,321 @@
+@media only screen and (max-width: 600px) {
+  .node {
+    display: none;
+  }
+  .about {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 46% 86%, 25% 76%, 0% 75%) !important;
+    width: 100vw !important;
+    height: 60vh !important;
+    position: relative;
+   
+    /* color: #0099ff; */
+
+    
+  }
+  .about::after{
+    background-image: url("https://media.istockphoto.com/photos/woman-working-from-home-student-girl-using-laptop-in-her-room-picture-id1284755338?b=1&k=20&m=1284755338&s=170667a&w=0&h=SExLZgm20UIOgQCgdETlrxfvxpCuSUq6_oZVFy5ItPs=");
+
+    background-repeat: no-repeat ;
+    object-fit: cover;
+    width: 100%;
+    height: 110vh !important;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 46% 86%, 25% 76%, 0% 75%) !important;
+
+    content: " ";
+    background-color: purple;
+    mix-blend-mode: color-dodge;
+    z-index: 1;
+
+    
+
+
+  }
+  .content{
+    display: none;
+  }
+  .content-2{
+    /* display: inline-block; */
+    position: absolute;
+    content: "";
+    /* animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; */
+    /* animation: typing  2s infinite; */
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
+    top:20%;
+    left:10%;
+   
+    z-index: 2;
+    /* padding-top: 10rem;
+    padding-left: 10rem; */
+    /* background-color: rgb(216, 211, 211);
+    opacity: 0.7; */
+    /* transition: transform .3s ease-out; */
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05),
+    inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+  color: rgb(229, 229, 188);
+  text-shadow: 0 0 15px rgb(208, 245, 167), 0 0 25px rgb(216, 216, 193);
+  animation: glow 1.5s linear infinite;
+
+  }
+  .content-2 h2{
+    text-align: center;
+  }
+ 
+  @keyframes glow {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+
+  .edit-waves {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .content-2{
+    display: none;
+  }
+}
+
+.node {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  width: 100%;
+  height: 500px;
+  margin-top: -31.25rem;
+}
+.about {
+  width: 100%;
+  height: 500px;
+  background-color: #100636;
+  /* background: #1F1C2C; 
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C); 
+  background: linear-gradient(to right, #928DAB, #1F1C2C);  */
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+}
+
+.cat svg {
+  margin-left: 30rem;
+  margin-bottom: 4.5rem;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+ul {
+  margin: auto;
+}
+
+#eyes {
+  animation: moveleft 3s ease-out infinite alternate;
+}
+@keyframes moveleft {
+  0% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(-6px);
+  }
+}
+
+#tail {
+  animation: relax 1s infinite ease-in alternate;
+}
+@keyframes relax {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4px);
+  }
+}
+
+#leaves {
+  animation: leaf 2s infinite alternate;
+}
+@keyframes leaf {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color:black; */
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  position: relative;
+  /*   margin-top:7rem; */
+  padding: 10%;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 3em;
+  position: absolute;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.content h2:nth-child(2) {
+  color: #bde619;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  min-height: 50px;
+  max-height: 150px;
+}
+.edit-waves {
+  margin-top: -3rem;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+.projects-container {
+  width: 100%;
+  height: 700px;
+  /* margin-top: -1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #100636; */
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  align-items: center;
+}
+
+.edit-container {
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  width: 95%;
+  height: 650px;
+  background-color: #f3f4f5;
+}
+.edit-skills {
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  width: 95%;
+  height: 650px;
+
+  background-color: #f3f4f5;
+}
+.skills-container {
+  width: 100%;
+  height: 700px;
+  /* margin-top: -1rem; */
+  display: flex;
+  background-color: #100636;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+.contacts {
+  width: 100%;
+  height: 600px;
+  /* background-color:#100636; */
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  padding: 2%;
+}
+
+.bg-display{
+  background: #1c1242; /* fallback for old browsers */
+  
+
+}
